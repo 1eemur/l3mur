@@ -19,10 +19,15 @@ return
 // Manually re-disable CapsLock with Ctrl-Alt-Space
 ^!Space:: SetCapsLockState AlwaysOff
 
-// Spotify
-!Left::Media_Prev
-!Right::Media_Next
-!DOWN::Media_Play_Pause
+// Media Controls
+Capslock & q::Media_Prev
+Capslock & e::Media_Next
+Capslock & w::Media_Play_Pause
+
+// Volume Control
+Capslock & a::SoundSet, +1,, Mute
+Capslock & s::SoundSet, -5
+Capslock & d::SoundSet, +5
 
 // Capslock + jkli (left, down, up, right)
 Capslock & j::Send {Blind}{Left DownTemp}
